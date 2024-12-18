@@ -1,0 +1,44 @@
+myst: v1
+kind: typst
+title: MSA Typst Template
+description: SciPy Conference Proceedings Template
+template: template.typ
+files:
+  - template.typ
+  - msa.typ
+  - logo.jpg
+  - pubmatter/pubmatter.typ
+  - pubmatter/validate-frontmatter.typ
+authors:
+  - name: Franklin Koch
+    github: fwkoch
+    affiliations:
+      - Curvenote
+version: 0.0.1
+license: MIT
+tags:
+  - preprint
+  - article
+  - paper
+thumbnail: ./thumbnail.png
+github: https://github.com/myst-templates/msa
+doc:
+  - id: title
+    required: true
+  - id: authors
+    required: true
+  - id: subtitle
+  - id: short_title
+  - id: open_access
+  - id: keywords
+  - id: doi
+  - id: github
+  - id: first_page
+parts:
+  - id: abstract
+    description: >
+      An abstract is a short summary of your research paper or report.
+    max_words: 500
+    required: true
+  - id: acknowledgements
+  - id: declaration
